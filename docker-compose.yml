@@ -7,7 +7,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: rootD
     ports:
       - 3306:3306
   adminer:
@@ -15,3 +15,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - 1080:1080  # For the web interface
+      - 1025:1025  # For SMTP

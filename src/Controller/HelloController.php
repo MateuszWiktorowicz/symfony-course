@@ -31,12 +31,12 @@ class HelloController extends AbstractController
         // $post->setText('Hello');
         // $post->setCreated(new DateTime());
 
-        $post = $posts->find(1);
+        // $post = $posts->find(1);
 
-        $comment = new Comment();
-        $comment->setText('Hello');
-        $comment->setPost($post);
-        $comments->add($comment, true);
+        // $comment = new Comment();
+        // $comment->setText('Hello');
+        // $comment->setPost($post);
+        // $comments->add($comment, true);
 
         // $profile = $profiles->find(1);
         // $profiles->remove($profile, true);
